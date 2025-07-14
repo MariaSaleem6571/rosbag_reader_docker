@@ -6,6 +6,12 @@ This project reads ROS bag files and extracts **paired images** from two specifi
 
 Build the Docker container:
 
+Navigate to project repository
+
+```bash
+cd your-project-directory
+```
+
 ```bash
 docker-compose build
 ```
