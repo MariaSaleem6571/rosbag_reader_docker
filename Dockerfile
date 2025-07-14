@@ -1,6 +1,5 @@
 FROM ros:noetic-ros-core
 
-# Install dependencies
 RUN apt-get update && apt-get install -y \
     python3-pip \
     python3-opencv \
@@ -8,7 +7,6 @@ RUN apt-get update && apt-get install -y \
     ros-noetic-rosbag \
     && rm -rf /var/lib/apt/lists/*
 
-# Install Python packages if needed (e.g. numpy)
 RUN pip3 install numpy
 
 WORKDIR /data

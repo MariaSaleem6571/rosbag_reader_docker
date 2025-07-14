@@ -1,0 +1,9 @@
+version: '3.8'
+
+services:
+  rosbag_reader:
+    build: .
+    volumes:
+      - ./:/data
+    working_dir: /data
+    tty: true
